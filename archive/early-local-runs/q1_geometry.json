@@ -1,0 +1,102 @@
+{
+ "baseline_case": {
+  "S1": [
+   -700.0,
+   -500.0
+  ],
+  "S2": [
+   700.0,
+   -500.0
+  ],
+  "G": [
+   0.0,
+   0.0
+  ],
+  "true_bearings_deg": [
+   35.5377,
+   144.4623
+  ],
+  "n_vertices": 4,
+  "bounded": true,
+  "clipped_to_arena": false,
+  "diameter_m": 51.651255,
+  "area_m2": 953.242821,
+  "mec_radius_m": 25.825628,
+  "radius_ratio": 1.0,
+  "covered_by_diameter_circle": true
+ },
+ "coverage_vs_n_sensors": [
+  {
+   "n_sensors": 2,
+   "n_valid": 3000,
+   "cover_ratio": 0.99167,
+   "not_cover_ratio": 0.00833,
+   "radius_ratio_median": 1.0,
+   "radius_ratio_p95": 1.0,
+   "radius_ratio_max": 1.000582
+  },
+  {
+   "n_sensors": 3,
+   "n_valid": 3000,
+   "cover_ratio": 0.897,
+   "not_cover_ratio": 0.103,
+   "radius_ratio_median": 1.0,
+   "radius_ratio_p95": 1.004856,
+   "radius_ratio_max": 1.128136
+  },
+  {
+   "n_sensors": 4,
+   "n_valid": 3000,
+   "cover_ratio": 0.82533,
+   "not_cover_ratio": 0.17467,
+   "radius_ratio_median": 1.0,
+   "radius_ratio_p95": 1.015795,
+   "radius_ratio_max": 1.128853
+  },
+  {
+   "n_sensors": 6,
+   "n_valid": 3000,
+   "cover_ratio": 0.75,
+   "not_cover_ratio": 0.25,
+   "radius_ratio_median": 1.0,
+   "radius_ratio_p95": 1.026727,
+   "radius_ratio_max": 1.123281
+  }
+ ],
+ "monte_carlo": {
+  "n_valid": 20000,
+  "diameter_mean_m": 51.6542,
+  "diameter_std_m": 0.2524,
+  "diameter_p05_m": 51.2419,
+  "diameter_p50_m": 51.6506,
+  "diameter_p95_m": 52.0875,
+  "area_mean_m2": 953.363,
+  "radius_ratio_max": 1.0,
+  "covered_fraction": 1.0
+ },
+ "jung_bound": {
+  "theoretical_upper_ratio": 1.154701,
+  "equilateral_triangle": {
+   "diameter": 1.0,
+   "mec_radius": 0.57735,
+   "ratio": 1.154701
+  }
+ },
+ "thales_consistency": [
+  {
+   "name": "锐角(等边)",
+   "longest_side_angle_deg": 60.0,
+   "covered": false
+  },
+  {
+   "name": "直角",
+   "longest_side_angle_deg": 90.0,
+   "covered": true
+  },
+  {
+   "name": "钝角",
+   "longest_side_angle_deg": 136.4,
+   "covered": true
+  }
+ ]
+}

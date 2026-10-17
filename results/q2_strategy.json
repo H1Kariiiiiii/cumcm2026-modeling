@@ -1,0 +1,98 @@
+{
+  "problem": "Q2 第二检测点的最优选择",
+  "closed_form": {
+    "area_criterion_t_star": "r",
+    "diameter_criterion_t_star": "sqrt(2)*r",
+    "d_min_formula": "6*r*tan(1°)"
+  },
+  "exact_verification": {
+    "t_star_diam_ratio_mean": 1.416368,
+    "t_star_diam_ratio_all": [
+      1.416371,
+      1.416366,
+      1.416369,
+      1.416369,
+      1.416364,
+      1.416365,
+      1.41637
+    ],
+    "t_star_diam_ratio_reference": 1.416366,
+    "t_star_area_ratio_mean": 1.002433,
+    "t_star_area_ratio_all": [
+      1.002432,
+      1.002434,
+      1.002432,
+      1.002433,
+      1.002435,
+      1.002433,
+      1.002433
+    ],
+    "t_star_area_ratio_reference": 1.002433,
+    "d_min_rel_dev_range": [
+      0.001117,
+      0.001117
+    ]
+  },
+  "robust_choices": {
+    "r[100,577]_minimax": {
+      "t_robust": 814.8,
+      "objective_m": 60.466
+    },
+    "r[100,577]_bayes": {
+      "t_robust": 516.7,
+      "objective_m": 38.093
+    },
+    "r[100,1000]_minimax": {
+      "t_robust": 173.9,
+      "objective_m": 400.0
+    },
+    "r[100,1000]_bayes": {
+      "t_robust": 382.6,
+      "objective_m": 101.291
+    },
+    "r[300,1500]_minimax": {
+      "t_robust": 171.0,
+      "objective_m": 400.0
+    },
+    "r[300,1500]_bayes": {
+      "t_robust": 364.9,
+      "objective_m": 237.059
+    }
+  },
+  "candidate_region_example": {
+    "s1": [
+      -300.0,
+      200.0
+    ],
+    "theta1_deg": 65.0,
+    "r_prior": [
+      200.0,
+      1000.0
+    ],
+    "branches": [
+      {
+        "direction_deg": 155.0,
+        "t_min": 100.0,
+        "t_max": 0.0,
+        "t_max_ideal_sqrt2_rhi": 1414.214,
+        "t_max_detectability": 0.0,
+        "t_max_arena": 1442.759
+      },
+      {
+        "direction_deg": 335.0,
+        "t_min": 100.0,
+        "t_max": 0.0,
+        "t_max_ideal_sqrt2_rhi": 1414.214,
+        "t_max_detectability": 0.0,
+        "t_max_arena": 2155.591
+      }
+    ],
+    "critical_r": 577.3503,
+    "note": "r>1000/√3≈577.35 m 时最坏 R_eff 下无可行 t（两步策略：先沿示向线前移降低 r）"
+  },
+  "strategy": {
+    "rule": "S2 = S1 + t·u(theta1±90°)；直径准则 t*=√2·r（精确 1.416366r），面积准则 t*=r（精确 1.002433r）",
+    "unknown_r": "先验 r∈[r_lo,r_hi] 时取 minimax 或 Bayes 稳健 t；r>577.35 m 时最坏 R_eff 下无可行 t，先沿示向线前移再垂直布点",
+    "detectability": "t ≤ sqrt(max(1000,r)²-r²)（最坏 R_eff；r≤1000 即 sqrt(10⁶-r²)）"
+  }
+}

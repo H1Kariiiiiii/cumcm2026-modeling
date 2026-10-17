@@ -1,0 +1,218 @@
+{
+  "problem": "Q2 第二检测点的最优选择",
+  "closed_form": {
+    "area_criterion_t_star": "r",
+    "diameter_criterion_t_star": "sqrt(2)*r",
+    "d_min_formula": "6*r*tan(1°)"
+  },
+  "exact_verification": {
+    "t_star_diam_ratio_mean": 1.416368,
+    "t_star_diam_ratio_all": [
+      1.416371,
+      1.416366,
+      1.416369,
+      1.416369,
+      1.416364,
+      1.416365,
+      1.41637
+    ],
+    "t_star_diam_ratio_reference": 1.416366,
+    "t_star_area_ratio_mean": 1.002433,
+    "t_star_area_ratio_all": [
+      1.002432,
+      1.002434,
+      1.002432,
+      1.002433,
+      1.002435,
+      1.002433,
+      1.002433
+    ],
+    "t_star_area_ratio_reference": 1.002433,
+    "d_min_rel_dev_range": [
+      0.001117,
+      0.001117
+    ]
+  },
+  "robust_choices": {
+    "r[100,577]_minimax": {
+      "t_robust": 816.5,
+      "objective_m": 60.466
+    },
+    "r[100,577]_bayes": {
+      "t_robust": 517.3,
+      "objective_m": 38.093
+    },
+    "r[100,1000]_minimax": {
+      "t_robust": null,
+      "objective_m": null,
+      "note": "r 先验上界 > 1000 m：最坏 R_eff 下单步无可行 t，应改走两步策略 two_step_plan()",
+      "two_step": {
+        "advance_m": 422.65,
+        "r_after": [
+          5.0,
+          577.35
+        ],
+        "t_second_step": [
+          7.07,
+          816.5
+        ],
+        "note": "先沿示向线前移 m=r_hi-577.35 m，再于垂直方向取 t=√2·r'（r' 为前移后距离）"
+      }
+    },
+    "r[100,1000]_bayes": {
+      "t_robust": null,
+      "objective_m": null,
+      "note": "r 先验上界 > 1000 m：最坏 R_eff 下单步无可行 t，应改走两步策略 two_step_plan()",
+      "two_step": {
+        "advance_m": 422.65,
+        "r_after": [
+          5.0,
+          577.35
+        ],
+        "t_second_step": [
+          7.07,
+          816.5
+        ],
+        "note": "先沿示向线前移 m=r_hi-577.35 m，再于垂直方向取 t=√2·r'（r' 为前移后距离）"
+      }
+    },
+    "r[300,1500]_minimax": {
+      "t_robust": null,
+      "objective_m": null,
+      "note": "r 先验上界 > 1000 m：最坏 R_eff 下单步无可行 t，应改走两步策略 two_step_plan()",
+      "two_step": {
+        "advance_m": 922.65,
+        "r_after": [
+          5.0,
+          577.35
+        ],
+        "t_second_step": [
+          7.07,
+          816.5
+        ],
+        "note": "先沿示向线前移 m=r_hi-577.35 m，再于垂直方向取 t=√2·r'（r' 为前移后距离）"
+      }
+    },
+    "r[300,1500]_bayes": {
+      "t_robust": null,
+      "objective_m": null,
+      "note": "r 先验上界 > 1000 m：最坏 R_eff 下单步无可行 t，应改走两步策略 two_step_plan()",
+      "two_step": {
+        "advance_m": 922.65,
+        "r_after": [
+          5.0,
+          577.35
+        ],
+        "t_second_step": [
+          7.07,
+          816.5
+        ],
+        "note": "先沿示向线前移 m=r_hi-577.35 m，再于垂直方向取 t=√2·r'（r' 为前移后距离）"
+      }
+    }
+  },
+  "candidate_region_example": {
+    "s1": [
+      -300.0,
+      200.0
+    ],
+    "theta1_deg": 65.0,
+    "r_prior": [
+      200.0,
+      1000.0
+    ],
+    "per_r": [
+      {
+        "r": 200.0,
+        "t_ideal_sqrt2_r": 282.84,
+        "t_detect_cap": 979.8,
+        "t_use": 282.84,
+        "feasible": true
+      },
+      {
+        "r": 288.9,
+        "t_ideal_sqrt2_r": 408.57,
+        "t_detect_cap": 957.36,
+        "t_use": 408.57,
+        "feasible": true
+      },
+      {
+        "r": 377.8,
+        "t_ideal_sqrt2_r": 534.29,
+        "t_detect_cap": 925.89,
+        "t_use": 534.29,
+        "feasible": true
+      },
+      {
+        "r": 466.7,
+        "t_ideal_sqrt2_r": 660.01,
+        "t_detect_cap": 884.42,
+        "t_use": 660.01,
+        "feasible": true
+      },
+      {
+        "r": 555.6,
+        "t_ideal_sqrt2_r": 785.74,
+        "t_detect_cap": 831.45,
+        "t_use": 785.74,
+        "feasible": true
+      },
+      {
+        "r": 644.4,
+        "t_ideal_sqrt2_r": 911.32,
+        "t_detect_cap": 764.69,
+        "t_use": 764.69,
+        "feasible": true
+      },
+      {
+        "r": 733.3,
+        "t_ideal_sqrt2_r": 1037.04,
+        "t_detect_cap": 679.91,
+        "t_use": 679.91,
+        "feasible": true
+      },
+      {
+        "r": 822.2,
+        "t_ideal_sqrt2_r": 1162.77,
+        "t_detect_cap": 569.2,
+        "t_use": 569.2,
+        "feasible": true
+      },
+      {
+        "r": 911.1,
+        "t_ideal_sqrt2_r": 1288.49,
+        "t_detect_cap": 412.19,
+        "t_use": 412.19,
+        "feasible": false
+      },
+      {
+        "r": 1000.0,
+        "t_ideal_sqrt2_r": 1414.21,
+        "t_detect_cap": 0.0,
+        "t_use": 0.0,
+        "feasible": false
+      }
+    ],
+    "union_t_range": [
+      100.0,
+      785.74
+    ],
+    "branches": [
+      {
+        "direction_deg": 155.0,
+        "t_arena_cap": 1442.76
+      },
+      {
+        "direction_deg": 335.0,
+        "t_arena_cap": 2155.59
+      }
+    ],
+    "critical_r": 577.3503,
+    "note": "C 为两支垂线射线上的参数化线段族；r>577.35 m 的支线按两步策略处理"
+  },
+  "strategy": {
+    "rule": "S2 = S1 + t·u(theta1±90°)；直径准则 t*=√2·r（精确 1.416366r），面积准则 t*=r（精确 1.002433r）",
+    "unknown_r": "先验 r∈[r_lo,r_hi] 时取 minimax 或 Bayes 稳健 t；r>577.35 m 时最坏 R_eff 下无可行 t，先沿示向线前移再垂直布点",
+    "detectability": "t ≤ sqrt(max(1000,r)²-r²)（最坏 R_eff；r≤1000 即 sqrt(10⁶-r²)）"
+  }
+}

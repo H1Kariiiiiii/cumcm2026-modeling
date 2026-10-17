@@ -1,0 +1,104 @@
+{
+ "per_r": [
+  {
+   "r_m": 200,
+   "t_star_diameter_m": 283.2734,
+   "t_star_over_r": 1.416367,
+   "sqrt2": 1.414214,
+   "dev_vs_sqrt2_pct": 0.1523,
+   "dmin_m": 20.96948,
+   "dmin_formula_6r_tan1_m": 20.94608,
+   "dmin_dev_pct": 0.1117,
+   "t_star_area_criterion_m": 200.4866,
+   "t_star_area_over_r": 1.002433,
+   "area_min_m2": 97.6459
+  },
+  {
+   "r_m": 300,
+   "t_star_diameter_m": 424.9098,
+   "t_star_over_r": 1.416366,
+   "sqrt2": 1.414214,
+   "dev_vs_sqrt2_pct": 0.1522,
+   "dmin_m": 31.45422,
+   "dmin_formula_6r_tan1_m": 31.41912,
+   "dmin_dev_pct": 0.1117,
+   "t_star_area_criterion_m": 300.7299,
+   "t_star_area_over_r": 1.002433,
+   "area_min_m2": 219.7032
+  },
+  {
+   "r_m": 500,
+   "t_star_diameter_m": 708.1832,
+   "t_star_over_r": 1.416366,
+   "sqrt2": 1.414214,
+   "dev_vs_sqrt2_pct": 0.1522,
+   "dmin_m": 52.42371,
+   "dmin_formula_6r_tan1_m": 52.36519,
+   "dmin_dev_pct": 0.1117,
+   "t_star_area_criterion_m": 501.2164,
+   "t_star_area_over_r": 1.002433,
+   "area_min_m2": 610.2868
+  },
+  {
+   "r_m": 800,
+   "t_star_diameter_m": 1133.0934,
+   "t_star_over_r": 1.416367,
+   "sqrt2": 1.414214,
+   "dev_vs_sqrt2_pct": 0.1523,
+   "dmin_m": 83.87793,
+   "dmin_formula_6r_tan1_m": 83.78431,
+   "dmin_dev_pct": 0.1117,
+   "t_star_area_criterion_m": 801.9463,
+   "t_star_area_over_r": 1.002433,
+   "area_min_m2": 1562.3341
+  },
+  {
+   "r_m": 1000,
+   "t_star_diameter_m": 1416.3664,
+   "t_star_over_r": 1.416366,
+   "sqrt2": 1.414214,
+   "dev_vs_sqrt2_pct": 0.1522,
+   "dmin_m": 104.84742,
+   "dmin_formula_6r_tan1_m": 104.73039,
+   "dmin_dev_pct": 0.1117,
+   "t_star_area_criterion_m": 1002.4331,
+   "t_star_area_over_r": 1.002433,
+   "area_min_m2": 2441.1471
+  },
+  {
+   "r_m": 1200,
+   "t_star_diameter_m": 1699.6399,
+   "t_star_over_r": 1.416367,
+   "sqrt2": 1.414214,
+   "dev_vs_sqrt2_pct": 0.1522,
+   "dmin_m": 125.8169,
+   "dmin_formula_6r_tan1_m": 125.67647,
+   "dmin_dev_pct": 0.1117,
+   "t_star_area_criterion_m": 1202.9197,
+   "t_star_area_over_r": 1.002433,
+   "area_min_m2": 3515.2518
+  },
+  {
+   "r_m": 1450,
+   "t_star_diameter_m": 2053.7318,
+   "t_star_over_r": 1.416367,
+   "sqrt2": 1.414214,
+   "dev_vs_sqrt2_pct": 0.1523,
+   "dmin_m": 152.02875,
+   "dmin_formula_6r_tan1_m": 151.85906,
+   "dmin_dev_pct": 0.1117,
+   "t_star_area_criterion_m": 1453.5279,
+   "t_star_area_over_r": 1.002433,
+   "area_min_m2": 5132.5117
+  }
+ ],
+ "candidate_region": {
+  "direction": "S1 为极点，沿 theta1 ± 90° 的两条射线（取并）",
+  "t_min_m": 424.26,
+  "t_max_m": 2121.32,
+  "t_max_detectable_m": 1000.0,
+  "r_critical_m": 577.3503,
+  "note": "t* = √2·r（直径准则）仅在 r ≤ 1000/√3 且 R_eff=1000 m 时严格可行；否则退化为约束边界解 t = √(10^6 − r²)"
+ },
+ "sweep_note": "sweep 项已写入 CSV"
+}

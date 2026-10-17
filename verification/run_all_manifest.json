@@ -1,0 +1,61 @@
+{
+ "generated_at": "2026-09-11T11:16:17.851311+00:00",
+ "command": "python code/run_all.py --episodes 40",
+ "seed": 42,
+ "episodes_per_strategy": 40,
+ "runtime": {
+  "python": "3.12.10",
+  "platform": "Windows-11-10.0.26220-SP0"
+ },
+ "dependencies": {
+  "numpy": "2.5.2"
+ },
+ "inputs_sha256": {
+  "题目与附件/B题.pdf": {
+   "sha256": "81c992a9bee5376308c4768b58719b177f17d6ee1f9861577a851924c5a838ca",
+   "bytes": 514825
+  },
+  "题目与附件/附件1.docx": {
+   "sha256": "20a27603ea81efa8f11658b3fa5b859a69aa3ff88fb3664d2abb80d740b47553",
+   "bytes": 33675
+  },
+  "题目与附件/附件2.docx": {
+   "sha256": "c882513d5b7e0ec50f3068570ea55fdc1b5c4a5fa2d6e9e54e79b33cf0858cb2",
+   "bytes": 57179
+  },
+  "题目与附件/2026论文格式规范.pdf": {
+   "sha256": "cece4bb3a900a0435160032b98ea26e03b0f2d7eca58424b0d023e26085aed26",
+   "bytes": 168354
+  },
+  "题目与附件/_B题_text.txt": {
+   "sha256": "c8ed16bd04fa9069c3f4ef790d258a5fe570820de3b67606feb8af5b2b3222fe",
+   "bytes": 12382
+  },
+  "题目与附件/_附件1_text.txt": {
+   "sha256": "1d6c2559180f8a1a2651cabcb9d4de472943e2b52acccc769784655acb1ecd14",
+   "bytes": 11577
+  },
+  "题目与附件/_附件2_text.txt": {
+   "sha256": "fd05ae4ad825d8a9b6318e85e4b3131d268c8fb0570d9ec09c26c18bec575e22",
+   "bytes": 28484
+  },
+  "题目分析报告.md": {
+   "sha256": "cb6d5bb8163b0a9762a521b9319242aacf12b092da806c920db4a0c4ccc182f1",
+   "bytes": 56769
+  },
+  "术语表格.md": {
+   "sha256": "b598b1624a0ed52facd3b7bd71c5e2f8e5fa9e6085b55f12da259a13a30186da",
+   "bytes": 15322
+  }
+ },
+ "outputs": [
+  "C:\\Users\\Hikari\\Desktop\\数学建模\\2026B\\results\\q1_geometry.json",
+  "C:\\Users\\Hikari\\Desktop\\数学建模\\2026B\\results\\q2_second_point.json",
+  "C:\\Users\\Hikari\\Desktop\\数学建模\\2026B\\results\\q2_sweep.csv",
+  "C:\\Users\\Hikari\\Desktop\\数学建模\\2026B\\results\\q3_summary.json",
+  "C:\\Users\\Hikari\\Desktop\\数学建模\\2026B\\results\\q3_episodes.csv",
+  "C:\\Users\\Hikari\\Desktop\\数学建模\\2026B\\results\\q4_summary.json",
+  "C:\\Users\\Hikari\\Desktop\\数学建模\\2026B\\results\\q4_episodes.csv"
+ ],
+ "elapsed_s": 13.75
+}
